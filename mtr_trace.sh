@@ -3,10 +3,10 @@ read -p "按Enter(回车)开始启动检查..." sdad
 
 iplise=(219.141.136.12 202.106.50.1 221.179.155.161 202.96.209.133 210.22.97.1 211.136.112.200 58.60.188.222 210.21.196.6 120.196.165.24)
 iplocal=(北京电信 北京联通 北京移动 上海电信 上海联通 上海移动 深圳电信 深圳联通 深圳移动)
-#echo "开始安装mtr命令..."
-#apt update -y && apt install traceroute -y
+echo "开始安装mtr命令..."
+which traceroute || sudo apt install -y tracerout
 #yum clean all && yum makecache && yum install mtr -y
-#clear
+clear
 echo -e "\n正在测试,请稍等..."
 echo -e "——————————————————————————————\n"
 for i in {0..8}; do
